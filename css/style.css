@@ -1,3 +1,4 @@
+@import "http://fonts.googleapis.com/css?family=Raleway";
 *{
 	padding: 0;
 	margin: 0;
@@ -5,7 +6,7 @@
 }
 body{
 	background-color: #fafafa;
-	font: 14px roboto, arial;
+	font: 14px Raleway, arial;
 	color: #6b6b6b;
 }
 .top-alg{
@@ -16,6 +17,7 @@ body{
 .mrg-top{
 	margin-top:100px;
 }
+
 .h-body{
 	height: 100vh;
 }
@@ -34,15 +36,15 @@ body{
 .card {
     border: 2px solid lightgray;
     border-radius: 4px;
-    box-shadow: 2px 2px 2px lightgray;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.2);
     position: relative;
     margin: 15px 0;
     transition: all .3s;
     background-color: white;
 }
-.card:hover{
-  box-shadow: 5px 5px 6px lightgray;
-}
+/* .card:hover{
+  box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+} */
 
 .title{
 	display: inline-block;
@@ -51,7 +53,7 @@ body{
 }
 .card .head{
 	padding: 30px 10px; 
-	border-bottom: 2px solid lightgray;
+	border-bottom: 1px solid lightgray;
 	font-size: 1.3em;
 }
 .content{
@@ -231,4 +233,13 @@ li .icon {
     padding-left: 6px;
     cursor: pointer;
     color: #FF5722;
+}
+@media screen and (max-width: 992px){
+	.mrg-top {
+	    margin-top: 10px;
+	}
+	.card-status > ul:before {
+	    left: 13.5px;
+
+	}
 }
