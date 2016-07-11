@@ -1,4 +1,3 @@
-@import "http://fonts.googleapis.com/css?family=Raleway";
 *{
 	padding: 0;
 	margin: 0;
@@ -6,7 +5,7 @@
 }
 body{
 	background-color: #fafafa;
-	font: 14px Raleway, arial;
+	font: 16px 'Source Sans Pro', arial;
 	color: #6b6b6b;
 }
 .top-alg{
@@ -73,10 +72,11 @@ li .icon {
     margin-right: 10px;
     transition: all .3s;
     border: 1px solid gray;
-    padding: 4px;
+    padding: 7px 6px 5px 6px;
     border-radius: 50%;
     display: table;
     color: #f1574d;
+    margin-top: -5px;
 }
 .content li:hover > .icon{
 	margin-right: 15px;
@@ -99,16 +99,14 @@ li .icon {
     padding-left: 3px;
     padding-left: 4px \9;
     width: 100%;
-    /* IE7-8 doesn't have border-radius, so don't indent the padding */
-
     margin-bottom: 0;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
     background-color: #f1574d;
-	color: white;
+    color: white;
+    height: 45px;
 }
-
 #custom-search-input button {
     border: 0;
     background: none;
