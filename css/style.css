@@ -5,14 +5,9 @@
 }
 body{
 	background-color: #fafafa;
-<<<<<<< HEAD
-    font: 14px Raleway, arial;
-    font: 16px 'Source Sans Pro', arial;
-    color: #6b6b6b;
-=======
+
 	font: 16px 'Source Sans Pro', arial;
 	color: #6b6b6b;
->>>>>>> d5d78d79a0a87347909dc4ba166a1693b798b79e
 }
 .top-alg{
 	height: 50px;
@@ -78,16 +73,10 @@ body{
 li .icon {
     margin-right: 10px;
     transition: all .3s;
-<<<<<<< HEAD
-    border: 1px solid transparent;
-=======
-    border: 1px solid gray;
->>>>>>> d5d78d79a0a87347909dc4ba166a1693b798b79e
-    padding: 7px 6px 5px 6px;
     border-radius: 50%;
     display: table;
     color: #f1574d;
-    margin-top: -5px;
+    margin-top: 2px;
 }
 /* .content li:hover > .icon{
     margin-right: 15px;
