@@ -1,4 +1,3 @@
-@import "http://fonts.googleapis.com/css?family=Raleway";
 *{
 	padding: 0;
 	margin: 0;
@@ -6,8 +5,9 @@
 }
 body{
 	background-color: #fafafa;
-	font: 14px Raleway, arial;
-	color: #6b6b6b;
+    font: 14px Raleway, arial;
+    font: 16px 'Source Sans Pro', arial;
+    color: #6b6b6b;
 }
 .top-alg{
 	height: 50px;
@@ -33,16 +33,17 @@ body{
 .gray-txt{
 	color: #313131;
 }
+
 .card {
-    border: 2px solid lightgray;
-    border-radius: 4px;
-    box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+    border: 1px solid #cfd8dc;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
     position: relative;
     margin: 15px 0;
     transition: all .3s;
-    background-color: white;
+    background-color: white
 }
-/* .card:hover{
+
+/* ===================.card:hover{
   box-shadow: 0px 1px 3px rgba(0,0,0,.4);
 } */
 
@@ -72,18 +73,19 @@ body{
 li .icon {
     margin-right: 10px;
     transition: all .3s;
-    border: 1px solid gray;
-    padding: 4px;
+    border: 1px solid transparent;
+    padding: 7px 6px 5px 6px;
     border-radius: 50%;
     display: table;
     color: #f1574d;
+    margin-top: -5px;
 }
-.content li:hover > .icon{
-	margin-right: 15px;
-	color: gray;
-	border: 1px solid white;
+/* .content li:hover > .icon{
+    margin-right: 15px;
+    color: gray;
+    border: 1px solid white;
 }
-
+ */
 
 #custom-search-input {
     margin:0;
@@ -102,11 +104,18 @@ li .icon {
     /* IE7-8 doesn't have border-radius, so don't indent the padding */
 
     margin-bottom: 0;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    background-color: #f1574d;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
 	color: white;
+    height: 45px;
+}
+#custom-search-input .search-query {
+    padding: 0px 9px 0; 
+    width: 100%;
+    color: black;
+    height: 50px;
+    margin-top: 10px;
 }
 
 #custom-search-input button {
@@ -122,7 +131,7 @@ li .icon {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    color:#D9230F;
+    color:gray;
 }
 .input-group-btn {
     position: absolute;
@@ -130,7 +139,7 @@ li .icon {
     white-space: nowrap;
     background-color: transparent;
     right: 0;
-    top: 5px;
+    top: 22px;
     z-index: 999;
     color: white;
 }
@@ -144,28 +153,28 @@ li .icon {
 	padding: 10px;
 }
 #custom-search-input button span {
-	color: #ffcac6;
+	color: gray;
 }
 #custom-search-input ::-webkit-input-placeholder {
-   color: #ffcac6 !important;
+   color: gray !important;
 }
 
 #custom-search-input :-moz-placeholder { /* Firefox 18- */
-   color: #ffcac6 !important;  
+   color: gray !important;  
 }
 
 #custom-search-input ::-moz-placeholder {  /* Firefox 19+ */
-   color: #ffcac6 !important;  
+   color: gray !important;  
 }
 
 #custom-search-input :-ms-input-placeholder {  
-   color: #ffcac6 !important;  
+   color: gray !important;  
 }
 #custom-search-input .form-control:focus {
     border-color: #ffffff;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #F44336;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #F44336;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px gray;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px gray;
 }
 #custom-search-input .input-group[class*="col-"] {
     float: none;
@@ -175,15 +184,15 @@ li .icon {
 }
 /* Card Status */
 .status-head{
-	font-size: 20px;
+	font-size: 26px;
 	font-weight: 300;
 	margin: 10px 0;
 }
 .card-status li {
     list-style-type: none;
-    margin: 10px auto;
     margin-left: 10px;
     display: flex;
+    padding: 14px 22px 14px 0;
 }
 .card-status > ul > li{
 	font-weight: 600;
@@ -202,14 +211,17 @@ li .icon {
 }
 .card-status > ul ul > li:before {
     content: " ";
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     background-color: #f1574d;
     margin-right: 19px;
     display: inline-table;
-    margin-left: 0.4px;
+    margin-left: -2px;
     margin-top: 3px;
+    border: 4px solid #ffffff;
+    z-index: 999;
+    transition: all .3s;
 }
 .card-status > ul{
 	position: relative;
@@ -218,21 +230,20 @@ li .icon {
     content: " ";
     border-left: 2px solid #f1574d;
     position: absolute;
-    height: 100%;
+    height: 93%;
     left: 14.5px;
     z-index: 0;
-    top: -2px;
+    top: 16px;
 }
 .card-status, .content {
     padding-bottom: 60px;
 }
-.card-status > ul ul > li{
+.card-status > ul ul > li:hover{
 	transition: all .3s;
-}
-.card-status > ul ul > li:hover {
-    padding-left: 6px;
     cursor: pointer;
-    color: #FF5722;
+}
+.card-status > ul ul > li:hover:before {
+    border: 1px solid #ffffff;
 }
 @media screen and (max-width: 992px){
 	.mrg-top {
